@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 50px;
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        div {
+            text-align: center;
+            align-content: center;
+        }
+
+        .default {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+
+            transform: rotate(45deg);
+        }
+
+        .scale {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+
+            transform: scale(0.6);
+        }
+
+        .translate {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+
+            transform: translate(20px, 20px);
+        }
+
+        .translate::before {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            display: block;
+            position: absolute;
+            transform: translate(-20px, -20px);
+            opacity: 0.2;
+        }
+
+        .skew {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+
+            transform: skew(10deg, 10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="default">default</div>
+        <div class="rotate">rotate</div>
+        <div class="scale">scale</div>
+        <div class="translate">translate</div>
+        <div class="skew">skew</div>
+    </div>
+</body>
+
+</html>
