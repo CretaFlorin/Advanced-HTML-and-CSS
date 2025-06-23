@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .rect {
+            width: 100%;
+            height: 100px;
+            background-color: blueviolet;
+            position: absolute;
+            left: -100%;
+            /* animation: name duration timing-function delay iteration-count */
+            animation: color-change 5s cubic-bezier(.77,.35,.28,.77) 0s infinite;
+        }
+
+        @keyframes color-change {
+            0% {
+                background-color: blueviolet;
+                left: -100%;
+            }
+
+            25% {
+                background-color: rgb(192, 226, 43);
+                left: 0;
+            }
+
+            50% {
+                background-color: blue;
+                left: 100%;
+            }
+
+            75% {
+                background-color: rgb(134, 226, 43);
+                left: 0;
+            }
+
+            100% {
+                background-color: blueviolet;
+                left: -100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rect"></div>
+</body>
+
+</html>
