@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1 {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background: linear-gradient(red 0, blue 100%);
+
+            /* The CSS3 specification includes new properties when it comes to defining the background painting area, we can position graphics and scale them. */
+            /* border-box, padding-box, content-box */
+            background-clip: content-box;
+        }
+
+        .d2 {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background: linear-gradient(red 0, blue 100%);
+
+            /* The CSS3 specification includes new properties when it comes to defining the background painting area, we can position graphics and scale them. */
+            /* border-box, padding-box, content-box */
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+                url(./download.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+
+</html>

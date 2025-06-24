@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="300" height="200"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        const context = canvas.getContext('2d')
+
+        context.fillStyle = 'red'
+        
+        context.fillRect(100, 50, 100, 100 )
+        context.beginPath()
+        context.arc(10, 100, 70, 0, Math.PI )
+        context.fill();
+        context.closePath()
+
+        context.fillStyle = 'blue'
+
+        context.fillText("This is canvas", 200, 50)
+
+        context.clearRect(50, 50, 150, 70);
+
+
+        console.log(context)
+    </script>
+</body>
+
+</html>
