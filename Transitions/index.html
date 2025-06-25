@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rect {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* trasition: property duration timing-function delay */
+            transition: all 2s;
+        }
+
+        .rect:hover {
+            width: 200px;
+            background-color: red;
+        }
+
+        .c {
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            margin-top: 10px;
+
+            position: absolute;
+            left: 8px;
+
+            transition: all 2s;
+
+            font-size: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .c1:active {
+            left: 80%;
+        }
+
+        .c2 {
+            top: 160px;
+        }
+
+        .c2:active {
+            left: 80%;
+            transition-timing-function: ease-in;
+        }
+
+        .c3 {
+            top: 215px;
+        }
+
+        .c3:active {
+            left: 80%;
+            transition-timing-function: ease-out;
+        }
+
+        .c4 {
+            top: 270px;
+        }
+
+        .c4:active {
+            left: 80%;
+            transition-timing-function: ease-in-out;
+        }
+
+        
+        .c5 {
+            top: 325px;
+        }
+
+        .c5:active {
+            left: 80%;
+            transition-timing-function: cubic-bezier(.16,1.51,.41,-0.96);
+        }
+
+        .c6 {
+            top: 380px;
+        }
+
+        .c6:active {
+            left: 80%;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rect"></div>
+    <div class="c c1">Default (ease)</div>
+    <div class="c c2">ease-in</div>
+    <div class="c c3">ease-out</div>
+    <div class="c c4">ease-in-out</div>
+    <div class="c c5">cubic-bezier</div>
+    <div class="c c6">linear</div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wheel {
+            text-align: center;
+            align-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(171, 122, 62);
+            border-radius: 50%;
+            position: absolute;
+            top: 350px;
+            left: -50px;
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: -25px;
+                rotate: 0deg;
+            }
+
+            50% {
+                left: 575px;
+                rotate: 1375deg;
+                top: 350px
+            }
+
+            55% {
+                left: 625px;
+                top: 400px;
+            }
+
+            75% {
+                left: 925px;
+                top: 600px;
+                rotate: 2675deg;
+            }
+
+            100% {
+                left: 925px;
+                top: 110vh;
+                rotate: 5275deg;
+            }
+        }
+
+
+        .ground{
+            width: 600px;
+            height: 10px;
+            background-color: rgb(153, 226, 43);
+            position: absolute;
+            top: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wheel">---------</div>
+    <div class="ground"></div>
+</body>
+
+</html>

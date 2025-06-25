@@ -2,7 +2,7 @@
     color: blue;
 } */
 
-.parent p {
+.parent > p {
     color: red;
 }
 
